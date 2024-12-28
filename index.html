@@ -67,6 +67,41 @@
       padding: 20px;
       font-size: 14px;
     }
+    #instructor {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.instructor-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #007BFF;
+  object-fit: cover;
+}
+
+.instructor-info h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.instructor-info p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
     /* 커리큘럼 이미지 스타일 */
 img {
   display: block;
@@ -121,10 +156,18 @@ section ul li ul li {
   </header>
 
   <!-- 강사 소개 섹션 -->
-  <section>
-    <h2>강사 소개</h2>
-    <p>2024학년도 수능 수학 1등급 / 경희대학교 ICT학과 4년 전액 장학생</p>
-  </section>
+<section id="instructor">
+  <h2>강사 소개</h2>
+  <div class="instructor-profile">
+    <img src="KakaoTalk_20241204_130057207.jpg" alt="김지한 강사 사진" class="instructor-photo">
+    <div class="instructor-info">
+      <h3>김지한 선생님</h3>
+      <p>캐나다 유학생 출신 노베이스에서 2024학년도 수능 수학 1등급</p>
+      <p>경희대학교 ICT학과 (컴퓨터공학과) 4년 전액 장학생</p>
+    </div>
+  </div>
+</section>
+
 
   <!-- 수업 특징 -->
   <section>
