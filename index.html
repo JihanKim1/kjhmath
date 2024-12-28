@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>김지한 선생님의 과외 안내</title>
   <style>
+    /* 기본 스타일 */
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
@@ -13,43 +14,52 @@
       background-color: #f8f9fa;
       color: #333;
     }
+
     header {
       background-color: #007BFF;
       color: white;
       padding: 30px 20px;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 28px;
     }
+
     header p {
-      font-size: 18px;
-      margin: 5px 0 0;
+      font-size: 16px;
+      margin: 10px 0 0;
     }
+
     section {
       max-width: 800px;
-      margin: 30px auto;
+      margin: 20px auto;
       padding: 20px;
       background: white;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
     section h2 {
-      font-size: 24px;
+      font-size: 20px;
       color: #007BFF;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       border-bottom: 2px solid #e9ecef;
       padding-bottom: 5px;
     }
-    section ul {
+
+    ul {
       list-style-type: none;
       padding: 0;
+      margin: 0;
     }
-    section ul li {
+
+    ul li {
       margin-bottom: 15px;
       line-height: 1.8;
     }
+
     .highlight-service {
       background-color: #FFF5CC;
       padding: 15px;
@@ -57,61 +67,109 @@
       margin-bottom: 20px;
       border-radius: 5px;
     }
+
     .highlight-service strong {
       color: #FF8C00;
     }
-    #instructor {
-        max-width: 800px;
-        margin: 30px auto;
-        padding: 20px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    #instructor h2 {
-        font-size: 24px;
-        color: #007BFF;
-        margin-bottom: 20px;
-        border-bottom: 2px solid #e9ecef;
-        padding-bottom: 5px;
-    }
+
     .instructor-profile {
-        display: flex;
-        align-items: center;
-        gap: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
+
     .instructor-photo {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 3px solid #007BFF;
-        object-fit: cover;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #007BFF;
+      object-fit: cover;
     }
+
     .instructor-info h3 {
-        font-size: 20px;
-        color: #333;
-        margin-bottom: 10px;
+      font-size: 18px;
+      margin-bottom: 5px;
     }
-    .instructor-info p {
-        font-size: 16px;
-        color: #555;
-        margin: 5px 0;
-    }
+
     .curriculum-image {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin-top: 10px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
     }
+
+    .cta {
+      text-align: center;
+      margin-top: 20px;
+      padding: 20px;
+      background: #f1f3f5;
+    }
+
+    .cta .highlight {
+      font-size: 16px;
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
     footer {
-        text-align: center;
-        background-color: #f1f3f5;
-        padding: 20px;
-        margin-top: 30px;
+      text-align: center;
+      background-color: #f1f3f5;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    /* 반응형 디자인 */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 22px;
+      }
+
+      header p {
         font-size: 14px;
+      }
+
+      section h2 {
+        font-size: 18px;
+      }
+
+      .instructor-profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .instructor-photo {
+        margin-bottom: 10px;
+      }
+
+      ul li {
+        font-size: 14px;
+      }
+
+      .cta .highlight {
+        font-size: 14px;
+      }
+
+      .cta a {
+        font-size: 12px;
+        padding: 8px 16px;
+      }
+
+      footer {
+        font-size: 12px;
+      }
     }
   </style>
 </head>
@@ -120,6 +178,7 @@
     <h1>‘학생 김지한’이 꿈꿨던 선생님,<br> ‘선생님 김지한’이 되겠습니다.</h1>
     <p>2026학년도 수능 대비 과외 안내</p>
   </header>
+
   <section id="instructor">
     <h2>강사 소개</h2>
     <div class="instructor-profile">
@@ -131,92 +190,26 @@
       </div>
     </div>
   </section>
-  
+
   <section>
     <h2>수업 특징</h2>
     <ul>
-      <li><strong>🔹 효율적이고 명확한 개념 학습</strong><br>캐나다에서의 유학 생활을 마친 뒤, 한국으로 돌아와 중학교 수학부터 시작해 5개월 만에 수1,수2까지 '수학의 바이블'로만 공부하여 2021수능 나형 수1, 수2 를 다 맞은 경험이 있습니다. 
-        <br><br>그때의 경험에 더해 이후 추가로 얻은 수능에 대한 깊은 이해를 바탕으로, 중요 개념과 증명을 선별해 강약 조절을 하며 효과적인 개념 수업을 진행합니다.
-        <br><br>
-      <li><strong>🔹 수능이 원하는 문제 풀이</strong><br>
-문제의 발문을 통해 필요한 개념과 행동 방향성을 읽어내어, 가장 효율적인 풀이법을 제시합니다.<br><br> 여러 풀이를 탐구하되, 핵심 개념에 맞춘 논리적이고 효과적인 접근을 우선시합니다.<br><br>
-      <li><strong>🔹 학생의 입장에서 생각하는 선생님</strong><br>저는 독학 재수 학원을 다니며 수능을 준비하였습니다. 당시 홀로 공부하며 느꼈던 갈증에 대해 생각 해 보았습니다.<br>
-        ✅ 공부 방향에 대한 걱정<br>
-        ✅ 수험 생활의 외로움과 나태함<br>
-        ✅ 즉각적인 질문 해결의 어려움<br>
-        이런 부분까지 함께 고민하며, 공부 방향부터 멘탈 관리까지 책임지겠습니다.
-        
+      <li><strong>효율적이고 명확한 개념 학습</strong>: 수능을 위한 핵심 개념과 증명 선별</li>
+      <li><strong>효과적인 문제 풀이</strong>: 발문 분석과 효율적인 풀이법 제시</li>
+      <li><strong>학생 중심 관리</strong>: 매일 학습 관리 및 플래너 점검</li>
     </ul>
   </section>
 
-  <section>
-    <h2>수업 대상</h2>
-    <ul>
-      <li>🎯 고2, 고3 및 N수생: 수학 노베이스부터 2등급까지</li>
-      <li>🎯 수학1, 수학2, 미적분</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>수업 방식</h2>
-    <ul>
-      <li> <strong>🔸 일반 수업:</strong> 학생 수준에 맞춘 단계별 수업 진행
-        <img src="Step1..jpg" alt="2026 수능 수학 커리큘럼" class="curriculum-image"></li>
-      <li><strong>🔸 피드백 수업:</strong> 인강 혹은 학원 수업을 들으며 공부하고, 저와는 학습 방향성을 점검하고, 인강 수강 중 생긴 질문에 대한 해결과 함께 진행됩니다.<br> 또한, 수업 시간에 학생이 저에게 직접 강의에서 배운 개념을 설명해 보며 부족한 부분을 보완하는 방식으로 이루어집니다./li>
-      <li><strong>🔸 맞춤형 수업:</strong> 요청에 따라 유연하게 수업 방식을 조율</li>
-      <li><strong>부산광역시 강서구:대면 수업/ 그 외의 지역: 화상 수업</strong> </li>
-    </ul>
-  </section>
-
-
-
-  <section>
-    <h2>추가 제공 서비스 (+a)</h2>
-    <ul>
-      <li>
-        <strong>🗓 플래너 및 학습 루틴 관리</strong><br>
-        • 매일 저녁 스터디 플래너를 카카오톡으로 받아 점검하고 피드백드립니다.
-      </li>
-      <li>
-        <strong>💬 빠른 질문 응답</strong><br>
-        • 학생 질문에 12시간 이내 답변합니다.<br>
-        • 밤 10시 이후 질문은 다음 날 답변드립니다.
-      </li>
-      <li class="highlight-service">
-        <strong>📅 일요일 Study With Me (09시~18시)</strong><br>
-        • 함께 공부하는 러닝 메이트로서 오프라인 및 zoom으로 일요일에는 학생들과 함께 공부합니다.<br>
-        • 질문 및 상담 가능합니다. (<strong>추가 비용 없음</strong>).<br>
-        • 불가피한 사정 시 사전 공지 예정.
-      </li>
-      <li>
-        <strong>💡 멘탈 및 학습 관리</strong><br>
-        • 1:1 학습 상담: 학생 희망 시, 멘탈 관리, 학습 방향성, 진로 상담까지 함께 고민합니다.
-      </li>
-      <li>
-        <strong>📝 오답 노트 및 학습 코칭</strong><br>
-        • 단순한 오답 정리에서 그치지 않고, ‘왜 틀렸는지’를 분석하는 오답 노트 작성법을 지도합니다.<br>
-        • 과외 시간 외에도 스스로 공부하는 방법을 안내합니다.
-      </li>
-      <li>
-        <strong>📊 학부모 피드백 시스템</strong><br>
-        • 월간 학습 리포트를 통해 학생의 진도와 성과를 정리해 학부모님께 전달합니다.
-      </li>
-    </ul>
-  </section>
-
- 
-
-
-<section class="cta">
+  <section class="cta">
     <div class="highlight">
-        📢 현재 최대 5명까지 추가 모집 중입니다.<br>
-        관심 있으신 분들은 서둘러 연락 주세요!
-      </div>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWMSuclEGDQwp_RM9Emm3BF2YHL-D3fPLVWGjNQ20MuNkYFA/viewform?vc=0&c=0&w=1&flr=0" target="_blank">과외 문의하기</a>
-</section>
+      📢 최대 5명 추가 모집 중! 서둘러 문의하세요.
+    </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWMSuclEGDQwp_RM9Emm3BF2YHL-D3fPLVWGjNQ20MuNkYFA/viewform?vc=0&c=0&w=1&flr=0" target="_blank">과외 문의하기</a>
+  </section>
 
   <footer>
     <p>문의 연락처: 0502-1930-8736</p>
   </footer>
 </body>
 </html>
+
