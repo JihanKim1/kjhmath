@@ -3,266 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>김지한 선생님의 과외 안내</title>
+  <title>김지한 수학 과외</title>
   <style>
-    /* 기본 스타일 */
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Nanum Gothic', sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-      background-color: #f8f9fa;
+      background-color: #FAF4E6;
       color: #333;
     }
     header {
-      background-color: #007BFF;
+      background-color: #4E342E;
       color: white;
-      padding: 30px 20px;
+      padding: 30px;
       text-align: center;
+      font-size: 24px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-    header p {
-      font-size: 18px;
-      margin: 5px 0 0;
-    }
-    section {
-      max-width: 800px;
+    .container {
+      max-width: 900px;
       margin: 30px auto;
       padding: 20px;
       background: white;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    section h2 {
-      font-size: 24px;
+    h2 {
       color: #007BFF;
-      margin-bottom: 20px;
       border-bottom: 2px solid #e9ecef;
       padding-bottom: 5px;
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 15px;
-      line-height: 1.8;
-    }
-    .highlight-service {
+    .highlight-box {
       background-color: #FFF5CC;
       padding: 15px;
       border-left: 4px solid #FFC107;
-      margin-bottom: 20px;
       border-radius: 5px;
+      margin-bottom: 20px;
     }
-    .highlight-service strong {
-      color: #FF8C00;
+    .cta-button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: #007BFF;
+      color: white;
+      padding: 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-top: 20px;
     }
     footer {
       text-align: center;
-      background-color: #f1f3f5;
+      background-color: #4E342E;
+      color: white;
       padding: 20px;
-      font-size: 14px;
-    }
-    #instructor {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.instructor-profile {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.instructor-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid #007BFF;
-  object-fit: cover;
-}
-
-.instructor-info h3 {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.instructor-info p {
-  font-size: 16px;
-  color: #555;
-  margin: 5px 0;
-}
-
-    /* 커리큘럼 이미지 스타일 */
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* 피드백 수업 내부 리스트 스타일 */
-section ul li ul {
-  list-style-type: none;
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-section ul li ul li {
-  margin-bottom: 8px;
-  line-height: 1.6;
-  font-size: 14px;
-}
-
-
-    /* 반응형 디자인 */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 24px;
-      }
-      header p {
-        font-size: 16px;
-      }
-      section {
-        padding: 15px;
-      }
-      section h2 {
-        font-size: 20px;
-      }
-      ul li {
-        font-size: 14px;
-      }
-      footer p {
-        font-size: 12px;
-      }
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>‘학생 김지한’이 꿈꿨던 선생님,<br> ‘선생님 김지한’이 되겠습니다.</h1>
-    <p>2026학년도 수능 대비 과외 안내</p>
+    ‘학생 김지한’이 꿈꿨던 선생님, ‘선생님 김지한’이 되겠습니다.
   </header>
-
-  <!-- 강사 소개 섹션 -->
-<section id="instructor">
-  <h2>강사 소개</h2>
-  <div class="instructor-profile">
-    <img src="KakaoTalk_20241204_130057207.jpg" alt="김지한 강사 사진" class="instructor-photo">
-    <div class="instructor-info">
-      <h3>김지한 선생님</h3>
-      <p>캐나다 유학생 출신 노베이스에서 2024학년도 수능 수학 1등급</p>
-      <p>경희대학교 ICT학과 (컴퓨터공학과) 4년 전액 장학생</p>
-    </div>
+  
+  <div class="container">
+  <h2>📌 강사 소개</h2>
+  <div style="text-align: center;">
+    <img src="KakaoTalk_20241204_130057207.jpg" alt="강사 김지한" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid #007BFF; object-fit: cover;">
   </div>
-</section>
+  <p>캐나다 유학 후 귀국, 수능 수학 노베이스에서 1등급, 경희대 ICT학과 4년 전액 장학생.</p>
+  <p>학생들이 시행착오 없이 빠르게 성장할 수 있도록 맞춤형 학습을 제공합니다.</p>
 
-
-  <!-- 수업 특징 -->
-  <section>
-    <h2>수업 특징</h2>
+    <h2>📘 수업 특징</h2>
+    <div class="highlight-box">
+      ✅ 개념을 이해하고 문제를 읽으며 적용하는 학습법<br>
+      ✅ 문제 풀이 과정이 아닌, 문제를 읽으며 개념을 떠올리는 사고 훈련<br>
+      ✅ Study With Me + 매일 플래너 점검으로 자기주도 학습 지원
+    </div>
+    
+    <h2>🎯 수업 대상</h2>
     <ul>
-      <li><strong>🔹 효율적이고 명확한 개념 학습</strong><br>
-        캐나다에서 유학 후 5개월 만에 중등 수학부터 수1,수2까지 수학의 바이블(기초 개념서)로만 공부하여 2021수능 수학1,수학2 전문항 정답을 달성한 경험이 있습니다. <br>핵심 개념과 증명을 선별하여 강약 조절한, 효과적인 개념 수업을 제공합니다.</li>
-      <li><strong>🔹 수능이 원하는 문제 풀이</strong><br>
-        문제 발문에서 필요한 개념과 행동 방향성을 읽어내어, 가장 효율적인 풀이법을 제시합니다.</li>
-      <li><strong>🔹 학생의 입장에서 생각하는 선생님</strong><br>
-        공부 방향, 수험 생활의 외로움, 즉각적인 질문 해결까지 추가 제공 서비스를 통하여 학생의 고민을 함께 해결합니다.</li>
+      <li>✅ 개념이 체계적으로 정리되지 않은 학생</li>
+      <li>✅ 문제 적용이 어려운 학생</li>
+      <li>✅ 자기주도 학습 중 방향을 잃고 방황하는 학생</li>
     </ul>
-  </section>
-
-  <!-- 수업 대상 -->
-  <section>
-    <h2>수업 대상</h2>
+    
+  <h2>📚 커리큘럼</h2>
+    <div class="highlight-box">
+    ✅ Stage 0 ~ Stage 4 로 구성된 체계적인 학습 진행<br>
+  </div>
+  <div style="text-align: center;">
+    <img src="curriculum.jpg" alt="커리큘럼" style="max-width: 100%; border-radius: 8px; margin-top: 10px;">
+  </div>
+    
+    <h2>💡 학습 관리 프로그램</h2>
     <ul>
-      <li>🎯 고2, 고3 및 N수생: 수학 노베이스부터 1등급을 꿈꾸는2등급까지</li>
-      <li>🎯 수학1, 수학2, 미적분</li>
+      <li>✅ 일요일 Study With Me (오전 9시~18시)</li>
+      <li>✅ 매일 학습 플래너 점검 & 피드백</li>
+      <li>✅ 카톡 질문 응답 (12시간 이내 피드백)</li>
+      <li>✅ 월간 학습 리포트 제공</li>
     </ul>
-  </section>
-
-  <!-- 수업 방식 -->
- <section>
-  <h2>수업 방식</h2>
-  <ul>
-    <!-- 일반 수업 -->
-    <li>
-      <strong>🔸 일반 수업:</strong>  
-      학생의 수준에 맞춰 단계별로 진행하며, 개념 학습부터 문제 풀이까지 체계적으로 지도합니다.
-      <br>
-      <img src="Step1..jpg" alt="2026 수능 수학 커리큘럼" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-    </li>
-
-    <!-- 피드백 수업 -->
-    <li>
-      <strong>🔸 피드백 수업:</strong>  
-      학원/인강에서 배운 내용을 기반으로, 학습 성취도를 점검하고 질문 해결을 돕습니다.
-      <ul>
-        <li>✅ 학습 방향 점검: 학생의 주간 학습 계획과 성취도를 확인하고 부족한 부분을 점검.</li>
-        <li>✅ 질문 해결: 학원/인강에서 이해되지 않은 개념이나 문제를 함께 해결.</li>
-        <li>✅ 개념 출력 훈련: 학생이 배운 내용을 직접 설명하도록 하여 오개념을 교정.</li>
-        <li>✅ 보완 학습 제안: 부족한 개념이나 문제 유형에 대해 재수강 추천 또는 보충 설명 제공.</li>
-      </ul>
-    </li>
-
-    <!-- 맞춤형 수업 -->
-    <li>
-      <strong>🔸 맞춤형 수업:</strong>  
-      학생과 학부모의 요청에 따라 유연하게 수업 방식을 조율합니다.
-    </li>
-
-    <!-- 지역 -->
-    <li>
-      <strong>🔸 지역:</strong>  
-      부산광역시 강서구 대면 수업, 그 외 지역은 화상 수업으로 진행합니다.
-    </li>
-  </ul>
-</section>
-
-  <!-- 영어 & 물리 피드백 섹션 -->
-  <section>
-    <h2>영어 & 물리 피드백 수업</h2>
-    <ul>
-      <li><strong>🔹 영어 피드백:</strong> 캐나다 유학 당시 현지 학교에서 상위 10%만 받을 수 있는 영어 A등급을 받았고, 2024 수능 영어에서는 듣기에서 2문제를 틀려서 2등급을 받았습니다. 인강 질문 해결 및 방향성 점검을 진행합니다.</li>
-      <li><strong>🔹 물리 피드백:</strong> 2024 수능 물리1에서 1문제를 틀려 1등급을 받았습니다. 인강 질문 해결 및 방향성 점검을 진행합니다.</li>
-      <li><em>※ 단독 수업은 진행하지 않으며, 수학 수업과 병행 가능합니다.</em></li>
-    </ul>
-  </section>
-
-  <!-- 추가 제공 서비스 -->
-  <section class="highlight-service">
-    <h2>학습 관리 프로그램</h2>
-    <ul>
-      <li><strong>🗓 플래너 및 학습 루틴 관리:</strong> 매일 저녁 스터디 플래너 점검</li>
-      <li><strong>💬 빠른 질문 응답:</strong> 12시간 내 답변</li>
-      <li>
-        <strong>📅 일요일 Study With Me (09시~18시)</strong><br>
-          • 함께 공부하는 러닝 메이트로서 오프라인 및 Zoom으로 일요일에는 학생들과 함께 공부합니다.<br>
-          • 질문 및 상담 가능합니다. (<strong>추가 비용 없음</strong>)<br>
-          • 불가피한 사정 시 사전 공지 예정.
-      </li>
-
-      <li><strong>📊 학부모 피드백 시스템:</strong> 월간 학습 리포트를 통한 성과 보고</li>
-    </ul>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <a href="https://open.kakao.com/o/sJGcLG7g" target="_blank">과외 문의 카카오톡 오픈 채팅방</a>
-  </section>
-
+    
+    <h2>📞 문의 및 상담</h2>
+    <p> 또는 대면 상담 가능합니다.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWMSuclEGDQwp_RM9Emm3BF2YHL-D3fPLVWGjNQ20MuNkYFA/viewform" class="cta-button">과외 및 상담 신청하기</a>
+    <a href="https://open.kakao.com/o/sJGcLG7g" class="cta-button">과외 문의 카카오톡 바로가기</a>
+  </div>
+  
   <footer>
-    <p>문의 연락처: 0502-1930-8736</p>
+    문의 연락처: 0502-1930-8736 | 카톡 문의 가능
   </footer>
 </body>
 </html>
